@@ -8,6 +8,7 @@
     body {
         background-image: url("Red-brick-wall-texture.jpg");
         background-repeat: no-repeat;
+        background-size: cover;
         }
 
     .button {
@@ -39,17 +40,111 @@
         position: absolute;
         right: 40px;
       }
-    
+
     .postit {
         font-family: ‘Amiko’, sans-serif;
         background-color: rgb(255, 255, 153);
+        border-style: solid;
+        border-width: 0.5px;
+        border-color: rgb(64, 64, 64);
         height: 160px;
         width: 175px;
         padding: 25px;
         text-align: center;
         position: relative;
         top: 50px;
+        left: 50px;
       }
+
+      .postit2 {
+        font-family: ‘Amiko’, sans-serif;
+        background-color: rgb(255, 255, 153);
+        border-style: solid;
+        border-width: 0.5px;
+        border-color: rgb(64, 64, 64);
+        height: 160px;
+        width: 175px;
+        padding: 25px;
+        text-align: center;
+        position: relative;
+        top: 25px;
+        left: 100px;
+        }
+
+      .postit3 {
+        font-family: ‘Amiko’, sans-serif;
+        background-color: rgb(255, 255, 153);
+        border-style: solid;
+        border-width: 0.5px;
+        border-color: rgb(64, 64, 64);
+        height: 160px;
+        width: 175px;
+        padding: 25px;
+        text-align: center;
+        position: relative;
+        top:-150px;
+        left: 400px;
+          }
+
+      .postit4 {
+        font-family: ‘Amiko’, sans-serif;
+        background-color: rgb(255, 255, 153);
+        border-style: solid;
+        border-width: 0.5px;
+        border-color: rgb(64, 64, 64);
+        height: 160px;
+        width: 175px;
+        padding: 25px;
+        text-align: center;
+        position: relative;
+        top:-550px;
+        left: 500px;
+            }
+
+      .postit5 {
+        font-family: ‘Amiko’, sans-serif;
+        background-color: rgb(255, 255, 153);
+        border-style: solid;
+        border-width: 0.5px;
+        border-color: rgb(64, 64, 64);
+        height: 160px;
+        width: 175px;
+        padding: 25px;
+        text-align: center;
+        position: absolute;
+        top: 130px;
+        right: 350px;
+              }
+
+      .postit6 {
+        font-family: ‘Amiko’, sans-serif;
+        background-color: rgb(255, 255, 153);
+        border-style: solid;
+        border-width: 0.5px;
+        border-color: rgb(64, 64, 64);
+        height: 160px;
+        width: 175px;
+        padding: 25px;
+        text-align: center;
+        position: relative;
+        bottom: 600px;
+        left: 1000px;
+                }
+
+      .postit7 {
+        font-family: ‘Amiko’, sans-serif;
+        background-color: rgb(255, 255, 153);
+        border-style: solid;
+        border-width: 0.5px;
+        border-color: rgb(64, 64, 64);
+        height: 160px;
+        width: 175px;
+        padding: 25px;
+        text-align: center;
+        position: relative;
+        bottom: 700px;
+        left: 700px;
+                  }
 
 </style>
 </head>
@@ -58,7 +153,33 @@
 <button class="button"> <a href="homepage.html" id="us">laeta</a> </button>
 <button onclick="WriteMessage()" class-="button" id="writebutton">Write your own</button>
 
-<p id="message"></p>
+<div class="postit">
+  <p id="message"></p>
+</div>
+
+<div class="postit2">
+  <p></p>
+</div>
+
+<div class="postit3">
+  <p></p>
+</div>
+
+<div class="postit4">
+  <p></p>
+</div>
+
+<div class="postit5">
+  <p></p>
+</div>
+
+<div class="postit6">
+  <p></p>
+</div>
+
+<div class="postit7">
+  <p></p>
+</div>
 
 <script>
     function WriteMessage() {
