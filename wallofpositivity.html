@@ -1,44 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> Wall of Positivity
-    </title>
+<title> Wall of Positivity </title>
 <link href="https://fonts.googleapis.com/css?family=Lobster|Pacifico" rel="stylesheet">
 
 <style>
     body {
- background-image: url("Red-brick-wall-texture.jpg");
-    background-repeat: no-repeat;
-}
-.button {
-    background-color: #ffffff;
-    border: none;
-    text-align: center;
-    }
+        background-image: url("Red-brick-wall-texture.jpg");
+        background-repeat: no-repeat;
+        }
+    
+    .button {
+        background-color: #ffffff;
+        border: none;
+        text-align: center;
+        }
+    
+    a {
+        text-decoration:none;
+        }
 
-a {
-    text-decoration:none;
-  }
-
-#us {
-      font-family: 'Lobster', cursive;
-      font-size: 35px;
-      color: rgb(255,255,255);
-      background-color: rgb(24,64,44);
-      width: 577px;
-      border: 12px rgb(24,64,44);
-      padding: 25px;
-      margin: 12px;
-      text-align: center;
+    #us {
+        font-family: 'Lobster', cursive;
+        font-size: 35px;
+        color: rgb(255,255,255);
+        background-color: rgb(24,64,44);
+        width: 577px;
+        border: 12px rgb(24,64,44);
+        padding: 25px;
+        margin: 12px;
+        text-align: center;
         }
 </style>
 </head>
     
 <body>
-    
-    
-    </body>
-
 <button class="button"> <a href="homepage.html" id="us">laeta</a> </button>
-</html>
+<button onclick="WriteMessage()" class-="button">Write your own</button>
 
+<p id="message"></p>
+
+<script>
+    function WriteMessage() {
+        var message = prompt("Please write your message.");
+        document.getElementById("message").innerHTML = message;
+</script>
+    
+</body>
+</html>
