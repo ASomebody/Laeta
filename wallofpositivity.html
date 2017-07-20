@@ -159,29 +159,40 @@
     <p id="message2"></p>
   </div>
 
-  <script>
-    var counter = 0;
-      function add() {
-        counter += 1;
-      }
+<script>
+  var counter = 1;
+    function add() {
+      counter += 1;
+    }
 
-      function WriteMessage() {
-          add();
-          if (counter==1) {
-            var message1 = prompt("Please write your message.");
+    function checkEmpty(inputtxt) {
+      if (inputtxt.length < 1) {
+        alert("Message is empty :(");
+        return False;
+      }
+    }
+
+    function WriteMessage() {
+        if (counter==1) {
+          var message1 = prompt("Please write your message.");
+          checkEmpty(message1);
+          if (message1 != null) {
             document.getElementById("message1").innerHTML = message1;
             document.getElementById("postit8").style.display = "block";
-          }
-          else if (counter==2) {
-            var message2 = prompt("Please write your message.");
-            document.getElementById("message2").innerHTML = message2;
-            document.getElementById("postit9").style.display = "block";
-          }
-          else {
-            alert("We appreciate your contribute to our wall, but leave some space for others to write positive messages as well!");
+            add();
           }
         }
-  </script>
-
-  </body>
+        else if (counter==2) {
+          var message2 = prompt("Please write your message.");
+          checkEmpty(message2);
+          document.getElementById("message2").innerHTML = message2;
+          document.getElementById("postit9").style.display = "block";
+          add();
+        }
+        else {
+          alert("We appreciate your contribute to our wall, but leave some space for others to write positive messages as well!");
+        }
+      }
+</script>
+</body>
 </html>
