@@ -297,14 +297,59 @@
           text-decoration:none;
       }
 
-      a:hover, a:focus {
-    text-decoration:underline;
+      .button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgb(24, 64, 44);
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button {
+    position: absolute;
+    bottom: -2200px;
+    left: 1100px;
+    font-family: Lobster;
 }
 
   </style>
 </head>
 
   <body>
+
+    <button class="button" style="vertical-align:middle"; onclick="https://asomebody.github.io/Laeta/music2.html")><span>Next</span></button>
 
     <h1 style="text-align: center;" id="us">music</h1>
 
@@ -392,4 +437,3 @@
   <script>
   </script>
 </html>
-
