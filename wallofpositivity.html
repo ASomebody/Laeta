@@ -38,7 +38,8 @@
         font-size: 25px;
         color: rgb(24,64,44);
         position: absolute;
-        right: 40px;
+        right: 75px;
+        top: 50px;
       }
 
     .postit {
@@ -82,7 +83,7 @@
         padding: 25px;
         text-align: center;
         position: relative;
-        top:-150px;
+        bottom: 125px;
         left: 400px;
           }
 
@@ -111,9 +112,9 @@
         width: 175px;
         padding: 25px;
         text-align: center;
-        position: absolute;
-        top: 130px;
-        right: 350px;
+        position: relative;
+        bottom: 775px;
+        left: 800px;
               }
 
       .postit6 {
@@ -127,7 +128,7 @@
         padding: 25px;
         text-align: center;
         position: relative;
-        bottom: 650px;
+        bottom: 750px;
         left: 1000px;
                 }
 
@@ -142,16 +143,46 @@
         padding: 25px;
         text-align: center;
         position: relative;
-        bottom: 700px;
-        left: 700px;
+        bottom: 900px;
+        left: 650px;
                   }
+
+      .postit8 {
+        font-family: ‘Amiko’, sans-serif;
+        background-color: rgb(255, 255, 153);
+        border-style: solid;
+        border-width: 0.5px;
+        border-color: rgb(64, 64, 64);
+        height: 160px;
+        width: 175px;
+        padding: 25px;
+        text-align: center;
+        position: relative;
+        bottom: 1300px;
+        left: 750px;
+                }
+
+      .postit9 {
+        font-family: ‘Amiko’, sans-serif;
+        background-color: rgb(255, 255, 153);
+        border-style: solid;
+        border-width: 0.5px;
+        border-color: rgb(64, 64, 64);
+        height: 160px;
+        width: 175px;
+        padding: 25px;
+        text-align: center;
+        position: relative;
+        bottom: 1575px;
+        left: 300px;
+                }
 
 </style>
 </head>
 
 <body>
 <button class="button"> <a href="homepage.html" id="us">laeta</a> </button>
-<button onclick="WriteMessage()" class-="button" id="writebutton">Write your own</button>
+<button onclick="WriteMessage()" class="button" id="writebutton">Write your own</button>
 
 <div class="postit">
   <p>In the middle of every difficulty lies opportunity.</p>
@@ -188,11 +219,36 @@
       Keep going. You got this!</p>
 </div>
 
+<div class="postit8" style="display:none" id="postit8">
+  <p id="message1"></p>
+</div>
+
+<div class="postit9" style="display:none" id="postit9">
+  <p id="message2"></p>
+</div>
+
 <script>
+  var counter = 0;
+    function add() {
+      counter += 1;
+    }
+
     function WriteMessage() {
-        var message = prompt("Please write your message.");
-        document.getElementById("message").innerHTML = message;
+        add();
+        if (counter==1) {
+          var message1 = prompt("Please write your message.");
+          document.getElementById("message1").innerHTML = message1;
+          document.getElementById("postit8").style.display = "block";
         }
+        else if (counter==2) {
+          var message2 = prompt("Please write your message.");
+          document.getElementById("message2").innerHTML = message2;
+          document.getElementById("postit9").style.display = "block";
+        }
+        else {
+          alert("We appreciate your contribute to our wall, but leave some space for others to write positive messages as well!");
+        }
+      }
 </script>
 
 </body>
