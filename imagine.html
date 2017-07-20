@@ -7,16 +7,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
+      div.gallery {
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 180px;
+      }
 
+      div.gallery:hover {
+        border: 1px solid #777;
+      }
+
+      div.gallery img {
+        width: 100%;
+        height: auto;
+      }
+
+      div.desc {
+        padding: 15px;
+        text-align: center;
+      }
       .button {
           background-color: rgb(24,64,44);
           border: none;
           text-align: center;
-          }
+      }
 
       a {
           text-decoration:none;
-        }
+      }
 
       #us {
             font-family: 'Lobster', cursive;
@@ -29,33 +48,37 @@
             margin: 12px;
             text-align: center;
               }
-      div.gallery {
-            margin: 5px;
-            border: 1px solid #ccc;
-            float: left;
-            width: 180px;
-              }
-      div.gallery:hover{
-            border: ipx solid #777;
-              }
-      div.gallery img{
-            width: 100%
-            height: auto
-              }
-      div.desc {
-            padding: 15px;
-            text-align: center;
-              }
+      .togo {
+        font-family: 'Pacifico', cursive;
+        font-size: 40px;
+        color: rgb(24,64,44);
+      }
+
 
 
     </style>
   </head>
   <body>
 
-    
-    <h1>IMAGINE</h1><hr>
+    <span class="togo">IMAGINE</span><hr>
+
     <a href="homepage.html" id="us"><i class="fa fa-home fa-2x"></i><span>    laeta</span></a>
-  
-    
+
+
+  <div class="gallery">
+  <a target="_blank" href="river.gif">
+    <img src="river.gif" alt="gif" width="300" height="200">
+  </a>
+  <div class="desc">Please show up</div>
+</div>
+
+
+  <div class="gallery">
+  <a target="_blank" href="net.gif">
+    <img src="net.gif" alt="gif" width="300" height="200">
+  </a>
+  <div class="desc">Please show up</div>
+    </div>
+
   </body>
 </html>
