@@ -31,27 +31,25 @@
         overflow: hidden;
       	box-shadow: 10px 10px 5px grey;
       }
-      .gocard	{
-        border: 1px;
-        border-radius: 5px;
-        background-color: rgb(72,191,133);
-        padding-top: 50px;
-        padding-right: 40px;
-        padding-bottom: 50px;
-        padding-left: 40px;
-      	box-shadow: 10px 10px 5px grey;
-      }
-      .gocard i	{
-        font-size: 200px;
-        color: white;
-        width: 200px;
-        float: left;
-        margin-right: 20px;
-      }
-      .togo {
+
+      .togo-mini {
         font-family: 'Pacifico', cursive;
-        font-size: 40px;
+        font-size: 25px;
+        font-weight: 50px;
         color: rgb(24,64,44);
+        margin-right: 50px;
+      }
+      .fa {
+        font-size: 25px;
+        font-weight: bold;
+        color: rgb(24,64,44);
+      }
+      nav {
+        text-align: center;
+      }
+      nav ul li {
+        text-decoration: none;
+        display: inline;
       }
       .text {
         font-family: 'Baumans', cursive;
@@ -67,6 +65,7 @@
         text-decoration-color: rgb(24,64,44);
         box-shadow: inset 10px 10px 10px 3px rgba(0,0,0,0.25);
       }
+
       .blurb1,
       .blurb2,
       .blurb3,
@@ -79,7 +78,7 @@
    			-webkit-text-stroke-color: black; */
         position: absolute;
         display: block;
-        top: 6.5em;
+        top: 4.5em;
         -webkit-timing-function: ease-in-out;
         -webkit-animation-duration: 15s;
         -webkit-iteration-count: infinite;
@@ -140,54 +139,44 @@
 
     <h1 id="us">laeta</h1>
 
+    <nav class="laetanav">
+      <a href="wallofpositivity.html">
+        <ul>
+          <li>
+            <i class="fa fa-smile-o"><span class="togo-mini">   positivity</span></i>
+          </li>
+        </a>
+        <a href="music.html">
+          <li>
+            <i class="fa fa-music"><span class="togo-mini">   music</span></i>
+          </li>
+        </a>
+        <a href="imagine.html">
+          <li>
+            <i class="fa fa-cloud"><span class="togo-mini">   imagine</span></i>
+          </li>
+        </a>
+        <a href="aboutus.html">
+        	<li>
+            <i class="fa fa-code"><span class="togo-mini">  about us</span></i>
+          </li>
+        </ul>
+      </a>
+    </nav>
+
     <p class="blurb1">How are you feeling today?</p>
     <p class="blurb2">Remember to take some time to stop and smell the roses.</p>
     <p class="blurb3">You're doing great!</p>
     <p class="blurb4">Need a break?</p>
     <p class="blurb5">"There is virtue in work and there is virtue in rest. Use both and overlook neither." --Alan Cohen</p>
 
-<br /> <br />
-
-    <a href="wallofpositivity.html">
-      <div class="gocard">
-        <i class="fa fa-smile-o"></i>
-        <h2 class="togo">positivity</h2>
-        <span class="text">Little positive comments and words of encouragement can brighten up our day. <br>
+        <!-- <span class="text">Little positive comments and words of encouragement can brighten up our day. <br>
           Visit the Wall of Positivity to take your mind off of your stress by reviewing other users' notes as well as writing your own messages on the wall.
         </span>
-      </div>
-    </a>
-    <br />
-    <a href="music_carousel.html">
-      <div class="gocard">
-        <i class="fa fa-music"></i>
-        <h2 class="togo">music</h2>
-        <span class="text">Music is a soothing element that has an emotional link to all of us.
-		Listening to music is a universal way to help us relax and escape the stress of everyday life. Our music page gives you music suggestions of different genres
-		to help you help you reduce your stress, therefore also helping you to increase your productivity! 
-	      
-	      </span>
-      </div>
-    </a>
-    <br />
-    <a href="imagine.html">
-      <div class="gocard">
-        <i class="fa fa-cloud"></i>
-        <h2 class="togo">imagine</h2>
-        <span class="text">Puppies, waterfalls, flowers, and more!
-	      <br> View our gallery full of positive and calming images :)</span>
-      </div>
-    </a>
-    <br />
-    <a href="aboutus.html">
-    	<div class="gocard">
-        <i class="fa fa-code"></i>
-        <h2 class="togo">about us</h2>
-        <span class="text">wecool</span>
-      </div>
-    </a>
 
-    <br />
+        <span class="text">Puppies, waterfalls, flowers, and more!
+	      <br> View our gallery full of positive and calming images :)</span> -->
+
   </body>
   <script>
   </script>
