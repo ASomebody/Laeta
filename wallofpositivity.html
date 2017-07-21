@@ -32,7 +32,7 @@
    text-align: center;
    position: left;
   }
-      
+
   .togo {
    font-family: 'Pacifico', cursive;
    font-size: 50px;
@@ -47,8 +47,21 @@
    right: 75px;
    top: 50px;
   }
-      
+
   .postit	{
+   font-family: ‘Baumans’, cursive;
+   background-color: rgb(255, 255, 153);
+   border-style: solid;
+   border-width: 0.5px;
+   border-color: rgb(64, 64, 64);
+   height: 225px;
+   width: 250px;
+   padding: 20px;
+   text-align: center;
+   position: relative;
+  }
+
+  .postit2	{
    font-family: ‘Baumans’, cursive;
    background-color: rgb(255, 255, 153);
    border-style: solid;
@@ -61,43 +74,38 @@
    position: relative;
    display: inline-block;
   }
-  
+
   #postit1 {
    top: 50px;
-   left: 50px;
   }
   #postit2 {
-   top: 25px;
+   top: 10px;
    left: 100px;
   }
   #postit3 {
-   bottom: 125px;
-   left: 400px;
+    top: 25px;
+   left: 200px;
   }
   #postit4 {
-   padding-bottom: 10px;
-   top:-550px;
-   left: 500px;
+   bottom: 140px;
+   left: 130px;
   }
-  #postit5 {
-   bottom: 775px;
-   left: 800px;
-  }
+
   #postit6 {
-   bottom: 750px;
-   left: 1000px;
+    bottom: 50px;
+    left: 200px
   }
   #postit7 {
-   bottom: 900px;
-   left: 650px;
+    bottom: 100px;
+    left:400px;
   }
   #postit8 {
-   bottom: 1300px;
-   left: 750px;
+    bottom: 690px;
+    right: 180px;
   }
   #postit9 {
-   bottom: 1575px;
-   left: 300px;
+    bottom: 660px;
+    left: 150px;
   }
     </style>
   </head>
@@ -111,42 +119,42 @@
     <p>In the middle of every difficulty lies opportunity.</p>
   </div>
 
-  <div class="postit" id="postit2">
+  <div class="postit2" id="postit2">
     <p>Always remember that you are BRAVER than you believe,
         STRONGER than you seem, SMARTER than you think,
         and twice as BEAUTIFUL as you'd ever imagined.</p>
   </div>
 
-  <div class="postit" id="postit3">
+  <div class="postit2" id="postit3">
     <p>By being yourself, you put something wonderful in the world that was not there before.</p>
   </div>
 
-  <div class="postit" id="postit4">
+  <div class="postit2" id="postit4">
     <p>Remember how far you've come, not just how far you have to go.
         You might not be where you want to be, but neither are you where you used to be.
         You are exactly where you need to be.</p>
   </div>
 
-  <div class="postit" id="postit5">
+  <div class="postit2" id="postit5">
     <p>Life is tough, but so are you.</p>
   </div>
 
-  <div class="postit" id="postit6">
+  <div class="postit2" id="postit6">
     <p>Someday, everything will make perfect sense.
         So for now, laugh at the confusion, smile through the tears,
         and keep reminding yourself that everything happens for a reason.</p>
   </div>
 
-  <div class="postit" id="postit7">
+  <div class="postit2" id="postit7">
     <p>You're doing better than you think you are. I'm proud of you.
         Keep going. You got this!</p>
   </div>
 
-  <div class="postit" style="display:none" id="postit8">
+  <div class="postit2" style="display:none" id="postit8">
     <p id="message1"></p>
   </div>
 
-  <div class="postit" style="display:none" id="postit9">
+  <div class="postit2" style="display:none" id="postit9">
     <p id="message2"></p>
   </div>
 
@@ -167,7 +175,7 @@
           checkEmpty(message1);
           if (message1 != null) {
             document.getElementById("message1").innerHTML = message1;
-            document.getElementById("postit8").style.display = "block";
+            document.getElementById("postit8").style.display = "inline-block";
             add();
           }
         }
@@ -175,7 +183,7 @@
           var message2 = prompt("Please write your message.");
           checkEmpty(message2);
           document.getElementById("message2").innerHTML = message2;
-          document.getElementById("postit9").style.display = "block";
+          document.getElementById("postit9").style.display = "inline-block";
           add();
         }
         else {
