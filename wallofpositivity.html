@@ -20,6 +20,12 @@
 
   .dropdown:hover .fa-home{
     display: inline-block;
+    position: relative;
+    top: 5px;
+  }
+
+  .fa-home {
+    display:none;
   }
 
   .dropdown-content {
@@ -45,24 +51,24 @@
 
   .dropdown-content a:hover {background-color: rgb(72,191,133)}
 
-  /*.dropdown:hover{
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  }*/
   .dropdown:hover .dropdown-content {
       display: block;
   }
 
+  #hicon{
+    display: none;
+  }
   #home {
     font-family: 'Lobster', cursive;
     font-size: 25px;
     color: rgb(255,255,255);
     background-color: rgb(24,64,44);
-     padding-top: 20px;
-     padding-left: 10px;
-     padding-right: 15px;
+     padding-top: 15px;
+     padding-left: 20px;
+     padding-right: 20px;
      padding-bottom: 10px;   /*margin: 12px;*/
      border-radius: 5px;
+     text-align: center;
   }
 
   }
@@ -169,7 +175,7 @@
   <body>
     <div>
       <div class="dropdown">
-      <a href="homepage.html" id="home"><i class="fa fa-home fa-2x" style="display:none"></i> laeta</a>
+      <a href="homepage.html" id="home"><i class="fa fa-home fa-2x"></i> laeta</a>
       <div class="dropdown-content">
         <a href="music.html"><i class="fa fa-music"></i>  Music</a>
         <a href="imagine.html"><i class="fa fa-cloud"></i>  Imagine</a>
