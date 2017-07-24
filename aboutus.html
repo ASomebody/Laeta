@@ -35,7 +35,35 @@
 opacity */
 }
 
-
+.dropdown {
+    position: absolute;
+    top: 20px;
+    display: inline-block;
+  }
+  .dropdown-content {
+      display: none;
+      position: relative;
+      top: 3px;
+      background-color: rgb(255,255,255);
+      max-width: 120px;
+      /*min-width:3160px;*/
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      border-radius: 5px;
+  }
+  .dropdown-content a {
+    color: rgb(24,64,44);
+    font: 30px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Pacifico', cursive;
+  }
+  .dropdown-content a:hover {background-color: rgb(72,191,133)}
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+	    
 #home {
     font-family: 'Lobster', cursive;
     font-size: 25px;
