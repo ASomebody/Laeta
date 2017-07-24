@@ -31,76 +31,10 @@
         font-size: 20px;
         color: rgb(24, 64, 44);
       }
-	    
-	 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+opacity */
 }
 
-/* Modal Content */
-.modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-}
 
-.close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-	    
-
-.dropdown {
-    position: absolute;
-    top: 20px;
-    display: inline-block;
-  }
-.dropdown-content {
-      display: none;
-      position: relative;
-      top: 3px;
-      background-color: rgb(255,255,255);
-      max-width: 120px;
-      /*min-width:3160px;*/
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-      border-radius: 5px;
-  }
-.dropdown-content a {
-    color: rgb(24,64,44);
-    font: 30px;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    font-family: 'Pacifico', cursive;
-  }
-
-.dropdown-content a:hover {background-color: rgb(72,191,133)}
- 
-.dropdown:hover .dropdown-content {
-      display: block;
-  }
-  
 #home {
     font-family: 'Lobster', cursive;
     font-size: 25px;
@@ -142,59 +76,5 @@
     <p class="text" >
     </p>
 	  
-	<!-- Trigger/Open The Modal -->
-<button id="myBtn"; style= text-align: "center"; >About Maria</button>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>
-	 <h1 style= text-align:center; > About Maria
-	  </h1>
-  <p class="text">
-    <br>
-    I joined to have something to so this summer and because I thought it'd be fun.
-    <br>
-    I like art and design, animals, and browsing the web :^)
-    <br>
-    <br>
-    Fun Fact: I hate poptarts they are disgusting.
-  </div>
-
-
-</div>
-	  
-	  
-<script>
-// Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
-    
   </body>
 </html>
