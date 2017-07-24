@@ -47,7 +47,7 @@ h1 {
   .dropdown-content {
       display: none;
       position: relative;
-      top: 2px;
+      top: 3px;
       left: 10px;
       background-color: rgb(255,255,255);
       max-width: 120px;
@@ -112,6 +112,41 @@ top: 25px;
 h2:hover, h2:focus {
   text-decoration:underline;
 }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: rgb(47, 127, 89);
+}
+  
+  <ul>
+  <li><a class="active" href="#classical">Classical Music</a></li>
+  <li><a href="#randb">R&B</a></li>
+  <li><a href="#disney">Disney Songs</a></li>
+  <li><a href="#hiphop">Hip-Hop/Rap</a></li>
+</ul>
   
 </style>
 
