@@ -147,13 +147,67 @@ div#columns:hover figure:not(:hover) {
     font-family: Lobster;
 }
 
+.dropdown {
+    position: absolute;
+    top: 20px;
+    display: inline-block;
+  }
+
+
+  .dropdown-content {
+      display: none;
+      position: relative;
+      top: 3px;
+      background-color: rgb(255,255,255);
+      max-width: 120px;
+      /*min-width:3160px;*/
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      border-radius: 5px;
+  }
+
+  .dropdown-content a {
+    color: rgb(24,64,44);
+    font: 30px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Pacifico', cursive;
+  }
+
+  .dropdown-content a:hover {background-color: rgb(72,191,133)}
+
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+
+  #home {
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+    color: rgb(255,255,255);
+    background-color: rgb(24,64,44);
+     padding-top: 18px;
+     padding-left: 20px;
+     padding-right: 20px;
+     padding-bottom: 4px;   /*margin: 12px;*/
+     border-radius: 5px;
+     text-align: center;
+  }
     </style>
   </head>
   <body>
 	   <button class="button" style="vertical-align:middle"; onClick="location.href='https://asomebody.github.io/Laeta/imagine2.html'"><span>Next</span></button>
 
+	<div class="dropdown">
+      		<a href="homepage.html" id="home"><i class="fa fa-home fa-2x"></i> laeta</a>
+        	<div class="dropdown-content">
+			<a href="wallofpositivity.html"><i class="fa fa-smile-o"></i>  Positivity</a>
+          		<a href="music_carousel.html"><i class="fa fa-music"></i>  Music</a>
+          		<a href="aboutus.html"><i class="fa fa-code"></i> About Us</a>
+        	</div>
+   	 </div>
 
-    <a href="homepage.html" id="us"><i class="fa fa-home fa-2x"></i><span>    laeta</span></a>
+
 
     <span class="togo">Imagine</span><hr>
 	  
