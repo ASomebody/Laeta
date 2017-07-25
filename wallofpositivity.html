@@ -239,9 +239,11 @@
         else if (counter==2) {
           var message2 = prompt("Please write your message.");
           checkEmpty(message2);
-          document.getElementById("message2").innerHTML = message2;
-          document.getElementById("postit9").style.display = "inline-block";
-          add();
+          if (message2 != null) {
+           document.getElementById("message2").innerHTML = message2;
+           document.getElementById("postit9").style.display = "inline-block";
+           add();
+          }
         }
         else {
           alert("We appreciate your contribution to our wall, but leave some space for others to write positive messages as well!");
