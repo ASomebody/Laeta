@@ -21,13 +21,11 @@
     overflow: hidden;
     box-shadow: 10px 10px 5px grey;
     }
-
   .text {
     font-family: 'Baumans', cursive;
     font-size: 20px;
     color: rgb(24, 64, 44);
     }
-
   .text2 {
     font-family: 'Baumans', cursive;
     font-size: 20px;
@@ -35,7 +33,12 @@
     opacity: 0;
     position: absolute;
     }
-
+  .name {
+    font-family: 'Baumans', cursive;
+    font-size: 20px;
+    color: rgb(24, 64, 44);
+    font-weight: bold;
+    }
   .togo {
     font-family: 'Pacifico', cursive;
     font-size: 40px;
@@ -43,19 +46,16 @@
   	position: relative;
   	left: 175px;
     }
-
 	.togo2 {
    	 font-family: 'Pacifico', cursive;
    	 font-size: 30px;
    	 color: rgb(24,64,44);
     }
-
   .dropdown {
     position: absolute;
     top: 15px;
     display: inline-block;
     }
-
   .dropdown-content {
     display: none;
     background-color: rgb(255,255,255);
@@ -67,7 +67,6 @@
     top: 52px;
     border-radius: 5px;
     }
-
   .dropdown-content a {
     color: rgb(24,64,44);
     font: 30px;
@@ -77,11 +76,9 @@
     font-family: 'Pacifico', cursive;
     }
   .dropdown-content a:hover {background-color: rgb(72,191,133)}
-
   .dropdown:hover .dropdown-content {
     display: block;
     }
-
   #home {
     font-family: 'Lobster', cursive;
     font-size: 25px;
@@ -94,47 +91,37 @@
     border-radius: 5px;
     text-align: center;
     }
-
   a {
     text-decoration:none;
     }
-
   .about {
     display: inline-block;
     text-align: center;
     position: relative;
     left: 50px;
     }
-
   .image{
     height: 335px;
     width: 300px;
   }
-
   .about:hover .image {
     opacity: 0.3;
     }
-
   .about:hover .text2 {
     opacity: 1;
     }
-
   #Kaylee{
     bottom: 100px;
     }
-
   #Kylie{
     bottom: 150px;
     }
-
   #Maria{
     bottom: 70px;
     }
-
   #Meiyi{
     bottom: 100px;
     }
-
 </style>
 
 <body>
@@ -163,7 +150,7 @@
 
   <h2 class="togo2">Meet the Team</h2>
     <div class="about">
-      <p class="text"> Kaylee
+      <p class="name"> Kaylee
       </p>
       <img src="kaylee.png" class="image">
       <div class="text2" id="Kaylee">
@@ -174,7 +161,7 @@
     </div>
 
     <div class="about">
-      <p class="text"> Kylie
+      <p class="name"> Kylie
       </p>
       <img src="moo.JPG" class="image">
       <div class="text2" id="Kylie">
@@ -185,7 +172,7 @@
     </div>
 
     <div class="about">
-      <p class="text"> Maria
+      <p class="name"> Maria
       </p>
       <img src="maria.JPG" class="image">
       <div class="text2" id="Maria">
@@ -196,7 +183,7 @@
     </div>
 
     <div class="about">
-      <p class="text"> Meiyi
+      <p class="name"> Meiyi
       </p>
       <img src="BitMeiyi.jpg" class="image">
       <div class="text2" id="Meiyi">
@@ -205,6 +192,7 @@
         </p>
       </div>
     </div>
-<br>
+  <br>
+
 </body>
 </html>
