@@ -11,14 +11,11 @@
    background-repeat: no-repeat;
    background-size: cover;
   }
-
   .dropdown {
     position: absolute;
     top: 20px;
     display: inline-block;
   }
-
-
   .dropdown-content {
       display: none;
       position: relative;
@@ -30,7 +27,6 @@
       z-index: 1;
       border-radius: 5px;
   }
-
   .dropdown-content a {
     color: rgb(24,64,44);
     font: 30px;
@@ -39,13 +35,10 @@
     display: block;
     font-family: 'Pacifico', cursive;
   }
-
   .dropdown-content a:hover {background-color: rgb(72,191,133)}
-
   .dropdown:hover .dropdown-content {
       display: block;
   }
-
   #home {
     font-family: 'Lobster', cursive;
     font-size: 25px;
@@ -58,22 +51,19 @@
      border-radius: 5px;
      text-align: center;
   }
-  
+
   .button {
    background-color: rgb(255, 255, 255);
    border: none;
    text-align: center;
    }
-
   .button:hover {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
   }
-
   a {
    text-decoration:none;
   }
-
   #writebutton {
    font-family: 'Pacifico', cursive;
    font-size: 25px;
@@ -84,7 +74,6 @@
    padding: 8px;
    border-radius: 5px;
   }
-
   .togo {
    font-family: 'Pacifico', cursive;
    font-size: 65px;
@@ -94,7 +83,6 @@
    left: 155px;
    bottom: 20px;
   }
-
   .postit	{
    font-family: ‘Baumans’, cursive;
    background-color: rgb(255, 255, 153);
@@ -107,7 +95,6 @@
    text-align: center;
    position: relative;
   }
-
   .postit2	{
    font-family: ‘Baumans’, cursive;
    background-color: rgb(255, 255, 153);
@@ -121,7 +108,6 @@
    position: relative;
    display: inline-block;
   }
-
   #postit1 {
    top: 65px;
   }
@@ -137,7 +123,6 @@
    bottom: 140px;
    left: 130px;
   }
-
   #postit6 {
     bottom: 50px;
     left: 200px
@@ -155,7 +140,19 @@
     left: 150px;
   }
 
-    </style>
+  .fa-times {
+    position: relative;
+    left: 125px;
+    bottom: 15px;
+    border: none;
+    background: none;
+  }
+
+  .fa-times:hover {
+    color: rgb(72,191,133);
+  }
+
+  </style>
   </head>
 
   <body>
@@ -208,6 +205,7 @@
   </div>
 
   <div class="postit2" style="display:none" id="postit8">
+    <button onclick="Delete()" class="fa fa-times"></button>
     <p id="message1"></p>
   </div>
 
@@ -220,35 +218,40 @@
     function add() {
       counter += 1;
     }
-    function checkEmpty(inputtxt) {
-      if (inputtxt.length < 1) {
-        alert("Message is empty :(");
-        return False;
+  function checkEmpty(inputtxt) {
+    if (inputtxt.length < 1) {
+      alert("Message is empty :(");
+      return False;
       }
     }
-    function WriteMessage() {
-        if (counter==1) {
-          var message1 = prompt("Please write your message.");
-          checkEmpty(message1);
-          if (message1 != null) {
-            document.getElementById("message1").innerHTML = message1;
-            document.getElementById("postit8").style.display = "inline-block";
-            add();
-          }
+  function WriteMessage() {
+    if (counter==1) {
+      var message1 = prompt("Please write your message.");
+      checkEmpty(message1);
+      if (message1 != null) {
+        document.getElementById("message1").innerHTML = message1;
+        document.getElementById("postit8").style.display = "inline-block";
+        add();
         }
-        else if (counter==2) {
-          var message2 = prompt("Please write your message.");
-          checkEmpty(message2);
-          if (message2 != null) {
-           document.getElementById("message2").innerHTML = message2;
-           document.getElementById("postit9").style.display = "inline-block";
-           add();
-          }
-        }
-        else {
-          alert("We appreciate your contribution to our wall, but leave some space for others to write positive messages as well!");
-        }
+    }
+    else if (counter==2) {
+      var message2 = prompt("Please write your message.");
+      checkEmpty(message2);
+      if (message2 != null) {
+        document.getElementById("message2").innerHTML = message2;
+        document.getElementById("postit9").style.display = "inline-block";
+        add();
       }
+    }
+    else {
+      alert("We appreciate your contribution to our wall, but leave some space for others to write positive messages as well!");
+    }
+  }
+
+  function Delete() {
+    document.getElementById("postit8").style.display = "none";
+    counter=1;
+    }
 </script>
 </body>
 </html>
