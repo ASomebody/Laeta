@@ -109,7 +109,7 @@
    display: inline-block;
   }
   #postit1 {
-   top: 65px;
+   top: 55px;
   }
   #postit2 {
    top: 30px;
@@ -205,11 +205,12 @@
   </div>
 
   <div class="postit2" style="display:none" id="postit8">
-    <button onclick="Delete()" class="fa fa-times"></button>
+    <button onclick="Delete()" class="fa fa-times" id="x1"></button>
     <p id="message1"></p>
   </div>
 
   <div class="postit2" style="display:none" id="postit9">
+    <button onclick="Delete2()" class="fa fa-times"></button>
     <p id="message2"></p>
   </div>
 
@@ -240,6 +241,7 @@
       if (message2 != null) {
         document.getElementById("message2").innerHTML = message2;
         document.getElementById("postit9").style.display = "inline-block";
+        document.getElementById("x1").style.display = "none";
         add();
       }
     }
@@ -251,6 +253,11 @@
   function Delete() {
     document.getElementById("postit8").style.display = "none";
     counter=1;
+    }
+
+  function Delete2() {
+    document.getElementById("postit9").style.display = "none";
+    counter=2;
     }
 </script>
 </body>
