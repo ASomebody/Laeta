@@ -1,69 +1,73 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>About Us</title>
-     <link href="https://fonts.googleapis.com/css?family=Amiko|Amiri|Andika|Basic|Baumans|Caesar+Dressing|Lobster|Pacifico" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+  <title>About Us</title>
+  <link href="https://fonts.googleapis.com/css?family=Amiko|Amiri|Andika|Basic|Baumans|Caesar+Dressing|Lobster|Pacifico" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <style>
-       #us {
-          font-family: 'Lobster', cursive;
-          font-size: 70px;
-          color: rgb(255,255,255);
-          background-color: rgb(24,64,44);
-          /*background-image: url("http://www.avani-mehta.com/wp-content/uploads/SanctuaryIII3.jpg");*/
-          background-repeat: no-repeat;
-          width: 1155px;
-          border: 25px rgb(24,64,44);
-          padding: 50px;
-          margin: 25px;
-          text-align: center;
-          overflow: hidden;
-          box-shadow: 10px 10px 5px grey;
-        }
-	    
-       .togo {
-        font-family: 'Pacifico', cursive;
-        font-size: 40px;
-        color: rgb(24,64,44);
-	position: relative;
-	left: 175px;
-	bottom: 50px;
-      }
-	    
-	.togo2 {
-       	 font-family: 'Pacifico', cursive;
-       	 font-size: 30px;
-       	 color: rgb(24,64,44);
-      }
-	
-	    
-       .text {
-        font-family: 'Baumans', cursive;
-        font-size: 20px;
-        color: rgb(24, 64, 44);
-      }
-opacity */
-}
+<style>
+  #us {
+    font-family: 'Lobster', cursive;
+    font-size: 70px;
+    color: rgb(255,255,255);
+    background-color: rgb(24,64,44);
+    /*background-image: url("http://www.avani-mehta.com/wp-content/uploads/SanctuaryIII3.jpg");*/
+    background-repeat: no-repeat;
+    width: 1155px;
+    border: 25px rgb(24,64,44);
+    padding: 50px;
+    margin: 25px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 10px 10px 5px grey;
+    }
 
-.dropdown {
+  .text {
+    font-family: 'Baumans', cursive;
+    font-size: 20px;
+    color: rgb(24, 64, 44);
+    }
+
+  .text2 {
+    font-family: 'Baumans', cursive;
+    font-size: 20px;
+    color: rgb(24, 64, 44);
+    opacity: 0;
     position: absolute;
-    top: 10px;
+    }
+
+  .togo {
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    color: rgb(24,64,44);
+  	position: relative;
+  	left: 175px;
+    }
+
+	.togo2 {
+   	 font-family: 'Pacifico', cursive;
+   	 font-size: 30px;
+   	 color: rgb(24,64,44);
+    }
+
+  .dropdown {
+    position: absolute;
+    top: 15px;
     display: inline-block;
-  }
+    }
+
   .dropdown-content {
-      display: none;
-      position: relative;
-      top: 3px;
-      background-color: rgb(255,255,255);
-      max-width: 120px;
-      /*min-width:3160px;*/
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-	position: absolute;
-	top: 70px;
-      border-radius: 5px;
-  }
+    display: none;
+    background-color: rgb(255,255,255);
+    max-width: 120px;
+    /*min-width:3160px;*/
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    position: absolute;
+    top: 52px;
+    border-radius: 5px;
+    }
+
   .dropdown-content a {
     color: rgb(24,64,44);
     font: 30px;
@@ -71,54 +75,122 @@ opacity */
     text-decoration: none;
     display: block;
     font-family: 'Pacifico', cursive;
-  }
+    }
   .dropdown-content a:hover {background-color: rgb(72,191,133)}
+
   .dropdown:hover .dropdown-content {
-      display: block;
-  }
+    display: block;
+    }
+
   #home {
     font-family: 'Lobster', cursive;
     font-size: 25px;
     color: rgb(255,255,255);
     background-color: rgb(24,64,44);
-     padding-top: 18px;
-     padding-left: 20px;
-     padding-right: 20px;
-     padding-bottom: 4px;   /*margin: 12px;*/
-     border-radius: 5px;
-     text-align: center;
-  }
+    padding-top: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 4px;   /*margin: 12px;*/
+    border-radius: 5px;
+    text-align: center;
+    }
 
   a {
-   text-decoration:none;
+    text-decoration:none;
+    }
+
+  .about {
+    display: inline-block;
+    text-align: center;
+    }
+
+  .about:hover .image {
+    opacity: 0.3;
+    }
+
+  .about:hover .text2 {
+    opacity: 1;
+    }
+
+  #Kaylee{
+
   }
+
+  #Kylie{
+
+  }
+
+  #Maria{}
+
+  #Meiyi{
+    bottom: 1px;
+    }
 </style>
-  </head>
-	
+
 <body>
+  <span class="togo">About Us</span><hr>
+
 	<div class="dropdown">
-      		<a href="homepage.html" id="home"><i class="fa fa-home fa-2x"></i> laeta</a>
-      		<div class="dropdown-content">
-			<a href="wallofpositivity.html"><i class="fa fa-smile-o"></i>  Positivity</a>
-        		<a href="music_carousel.html"><i class="fa fa-music"></i>  Music</a>
-        		<a href="imagine.html"><i class="fa fa-cloud"></i>  Imagine</a>
-	      	</div>
-    	</div>
-	<span class="togo"; styleleft: 200px;>About Us</span><hr>
-	  
+    <a href="homepage.html" id="home"><i class="fa fa-home fa-2x"></i> laeta</a>
+    <div class="dropdown-content">
+		    <a href="wallofpositivity.html"><i class="fa fa-smile-o"></i>  Positivity</a>
+    		<a href="music_carousel.html"><i class="fa fa-music"></i>  Music</a>
+    		<a href="imagine.html"><i class="fa fa-cloud"></i>  Imagine</a>
+    </div>
+	</div>
+
   <h2 text-align: center; class="togo2">Our Mission</h2>
-    <p text-align: center; class="text" >Stress is all around us, in the form of an approaching deadline or an event that did not go the way we planned.
+    <p text-align: center; class="text">Stress is all around us, in the form of an approaching deadline or an event that did not go the way we planned.
         Although everyone faces some form of stress, we deal with our stress differently.
         Laeta is designed to help users find happiness in their own ways.
         Our website offers hassle-free activities such as reading positive messages, listening to relaxing music, or scrolling through soothing images.
     </p>
-   <h2 class="togo2">Who We Are</h2>
+
+  <h2 class="togo2">Who We Are</h2>
     <p class="text" >We are four dedicated, aspiring computer scientists who want to develop new technology to solve problems around the world.
 	    		We are currently participating in the Girl Who Code Summer Immersion Program at Sephora.
     </p>
-   <h2 class="togo2">Meet the Team</h2>
-    <p class="text" >
-    </p>
-	  
-  </body>
+
+  <h2 class="togo2">Meet the Team</h2>
+    <div class="about">
+      <p class="text"> Kaylee
+      </p>
+      <img src="kaylee.png" class="image">
+      <div>
+        <p class="text2" id="Kaylee"> Junior at Abraham Lincoln High School
+        </p>
+      </div>
+    </div>
+
+    <div class="about">
+      <p class="text"> Kylie
+      </p>
+      <img src="moo.JPG" class="image">
+      <div>
+        <p class="text2" id="Kylie"> Junior at Irvington High School
+        </p>
+      </div>
+    </div>
+
+    <div class="about">
+      <p class="text"> Maria
+      </p>
+      <img src="IMG_7764.PNG" class="image">
+      <div>
+        <p class="text2" id="Maria"> Junior at Oakland Charter High School
+        </p>
+      </div>
+    </div>
+
+    <div class="about">
+      <p class="text"> Meiyi
+      </p>
+      <img src="BitMeiyi.jpg" class="image">
+      <div>
+        <p class="text2" id="Meiyi"> Senior at KIPP King Collegiate High School
+        </p>
+      </div>
+    </div>
+
+</body>
 </html>
