@@ -160,9 +160,9 @@
         display: inline-block;
         position: absolute;
         width: 250px;
-        height: 200px;
         opacity: 0.95;
         border-radius: 10px;
+        backface-visibility: hidden;
       }
       
       .a {
@@ -175,6 +175,7 @@
       }
       .b {
         transform: rotateY(60deg) translateZ(250px);
+        width: 250px;
       }
       .c {
         transform: rotateY(120deg) translateZ(250px);
@@ -274,7 +275,7 @@
         <img class="slide d" src="https://68.media.tumblr.com/a51c8ceb3057a21070dc6b281f86c3cb/tumblr_o4ede5Fkqv1qbgezjo1_400.gif">
         <img class="slide e" src="https://images-na.ssl-images-amazon.com/images/I/61HabTQM%2BCL._SY500_.jpg">
         <div class="slide f">
-          <img src="aintnobodytakinmybaby.jpg">
+          <img class="slide" src="aintnobodytakinmybaby.jpg">
           <a href="https://www.youtube.com/watch?v=hCBX28p-4JY">
             <h2 class="welcome">Song Name: Ain't Nobody Takin My Baby<br><br> Artist: Russ<br><br>Single
           <br>
