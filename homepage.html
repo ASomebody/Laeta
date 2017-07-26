@@ -160,7 +160,7 @@
         display: inline-block;
         position: absolute;
         width: 250px;
-        opacity: 0.95;
+        opacity: 1;
         border-radius: 10px;
         backface-visibility: hidden;
       }
@@ -168,8 +168,9 @@
       .a {
         transform: rotateY(0deg) translateZ(250px);
         text-align: center;
+        line-height: 30px;
         font-size: 20px;
-        padding: 5px;
+        padding: 10px;
         background: rgb(24,64,44);
         color: white;
       }
@@ -259,21 +260,35 @@
     
     <div class="container">
       <div class="carus">
-        <div class="welcome slide a"><br>welcome to the world's most relaxing site<br><hr style="text-decoration:underline; text-decoration-style:dashed;">explore our positivity, music, and imagine pages to de-stress</div>
-        <img class="slide b" src="https://every-tuesday.com/wp-content/uploads/2015/01/life-is-tough-but-so-are-you-preview.jpg">
-        <div class="slide c">
-          <img src="stoney.jpg">
-          <a href="https://www.youtube.com/watch?v=hCBX28p-4JY">
-            <h2 class="welcome">Song Name: Ain't Nobody Takin My Baby<br> Artist: Russ<br>Single
-          <br>
-              <h2>
-                <a href="https://asomebody.github.io/Laeta/music_carousel.html">Click here to check out our "Music" page for more music suggestions!</a>
-              </h2>
-            </h2>        
-          </a>
+        <div class="welcome slide a"><span style="font-size: 30px;">welcome to the world's most relaxing site</span><br><hr style="text-decoration:underline; text-decoration-style:dashed;">explore our positivity, music, and imagine pages to de-stress<br></div>
+        <div class="slide b">
+          <img class="slide" src="https://every-tuesday.com/wp-content/uploads/2015/01/life-is-tough-but-so-are-you-preview.jpg">
+          <div class="overlay">
+          </div>
         </div>
-        <img class="slide d" src="https://68.media.tumblr.com/a51c8ceb3057a21070dc6b281f86c3cb/tumblr_o4ede5Fkqv1qbgezjo1_400.gif">
-        <img class="slide e" src="https://images-na.ssl-images-amazon.com/images/I/61HabTQM%2BCL._SY500_.jpg">
+        <div class="slide c">
+          <img class="slide" src="stoney.jpg">
+          <div class="overlay">
+            <a href="https://www.youtube.com/watch?v=hCBX28p-4JY">
+              <h2 class="welcome">Song Name: Ain't Nobody Takin My Baby<br> Artist: Russ<br>Single
+            <br>
+                <h2>
+                  <a href="https://asomebody.github.io/Laeta/music_carousel.html">Click here to check out our "Music" page for more music suggestions!</a>
+                </h2>
+              </h2>        
+            </a>
+          </div>
+        </div>
+        <div class="slide d">
+          <img class="slide" src="https://68.media.tumblr.com/a51c8ceb3057a21070dc6b281f86c3cb/tumblr_o4ede5Fkqv1qbgezjo1_400.gif">
+          <div class="overlay">
+          </div>
+        </div>
+        <div class="slide e">
+          <img class="slide" style="width: 200px;" src="https://images-na.ssl-images-amazon.com/images/I/61HabTQM%2BCL._SY500_.jpg">
+          <div class="overlay">
+          </div>
+        </div>
         <div class="slide f">
           <img class="slide" src="aintnobodytakinmybaby.jpg">
           <a href="https://www.youtube.com/watch?v=hCBX28p-4JY">
