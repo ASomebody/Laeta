@@ -6,17 +6,20 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
+
     <style>
       body {
-      background-color: rgb(255,255,255);
+      background-color: #FFF;
 /*       background-image: url("http://www.avani-mehta.com/wp-content/uploads/SanctuaryIII3.jpg");
       background-repeat: no-repeat; */
       overflow-x: hidden;
       }
       a {
         text-decoration: none;
+      }
+      hr {
+        text-decoration:underline;
+        text-decoration-style:dashed;
       }
       #us {
         font-family: 'Lobster', cursive;
@@ -56,27 +59,25 @@
         font-size: 20px;
         color: rgb(24, 64, 44);
       }
-      img	{
-        border-radius: 20px;
-      }
-      .gocard:hover{
-        border-radius: 70px;
-        text-decoration: none;
-        text-decoration-color: rgb(24,64,44);
-        box-shadow: inset 10px 10px 10px 3px rgba(0,0,0,0.25);
-      }
-      
+
       .welcome {
         font-family: 'Baumans', cursive;
         font-size: 20px;
         color: white;
+        text-align: center;
+        padding: 20px;
+        display: block;
       }
 
-      .blurb1,
-      .blurb2,
-      .blurb3,
-      .blurb4,
-      .blurb5 {
+      span.welcome {
+        line-height: 35px;
+      }
+
+      a:hover, span.welcome:hover {
+        text-decoration: underline;
+      }
+
+      .blurb {
         font-family: 'Baumans', cursive;
         font-size: 30px;
         color: rgb(47,127,89);
@@ -94,23 +95,23 @@
         animation-duration: 35s;
         animation-iteration-count: infinite;
       }
-      .blurb1 {
+      .b1 {
         -webkit-animation-name: text-slide1;
         animation-name: text-slide1;
       }
-      .blurb2 {
+      .b2 {
         -webkit-animation-name: text-slide2;
         animation-name: text-slide2;
       }
-      .blurb3 {
+      .b3 {
         -webkit-animation-name: text-slide3;
         animation-name: text-slide3;
       }
-      .blurb4 {
+      .b4 {
         -webkit-animation-name: text-slide4;
         animation-name: text-slide4;
       }
-      .blurb5 {
+      .b5 {
         -webkit-animation-name: text-slide5;
         animation-name: text-slide5;
       }
@@ -139,7 +140,7 @@
         84.7%, 95.7%  {left: 5%; opacity: 1;}
         100% {left: 110%; opacity: 0;}
       }
-      
+
       .container {
         top: 8.2em;
         margin: 0 auto;
@@ -148,7 +149,7 @@
         position: relative;
         perspective: 1000px;
       }
-      
+
       .carus {
         height: 100%;
         width: 100%;
@@ -156,7 +157,7 @@
         transform-style: preserve-3d;
         transition: transform 1s;
       }
-      
+
       .slide {
         display: inline-block;
         position: absolute;
@@ -165,7 +166,7 @@
         border-radius: 10px;
         backface-visibility: hidden;
       }
-      
+
       .a {
         transform: rotateY(0deg) translateZ(250px);
         text-align: center;
@@ -187,12 +188,12 @@
       }
       .e {
         transform: rotateY(240deg) translateZ(250px);
-      } 
+      }
       .f {
         transform: rotateY(300deg) translateZ(250px);
         color: #FFF;
       }
-      
+
       .next, .prev {
         color: rgb(24,64,44);
         font-family: 'Baumans', sans-serif;
@@ -214,8 +215,11 @@
       }
       .next { right: 5em; }
       .prev { left: 5em; }
-      
+
       .overlay {
+        display: inline-block;
+        border-radius: 10px;
+
         width: 100%;
         height: 100%;
         opacity: 0;
@@ -223,11 +227,11 @@
         color: white;
         transition: .5s ease;
       }
-      
+
       .overlay:hover {
         opacity: 0.95;
       }
-	    
+
     </style>
   </head>
 
@@ -260,11 +264,11 @@
       </a>
     </nav>
 
-    <p class="blurb1">How are you feeling today?</p>
-    <p class="blurb2">Remember to take some time to stop and smell the roses.</p>
-    <p class="blurb3">You're doing great!</p>
-    <p class="blurb4">Need a break?</p>
-    <p class="blurb5">"There is virtue in work and there is virtue in rest. Use both and overlook neither." --Alan Cohen</p>
+    <p class="blurb b1">How are you feeling today?</p>
+    <p class="blurb b2">Remember to take some time to stop and smell the roses.</p>
+    <p class="blurb b3">You're doing great!</p>
+    <p class="blurb b4">Need a break?</p>
+    <p class="blurb b5">"There is virtue in work and there is virtue in rest. Use both and overlook neither." --Alan Cohen</p>
 
         <!-- <span class="text">Little positive comments and words of encouragement can brighten up our day. <br>
           Visit the Wall of Positivity to take your mind off of your stress by reviewing other users' notes as well as writing your own messages on the wall.
@@ -272,39 +276,48 @@
 
         <span class="text">Puppies, waterfalls, flowers, and more!
 	      <br> View our gallery full of positive and calming images :)</span> -->
-    
+
     <div class="container">
       <div class="carus">
-        <div class="welcome slide a"><span style="font-size: 30px;">welcome to the world's most relaxing site</span><br><hr style="text-decoration:underline; text-decoration-style:dashed;">explore our positivity, music, and imagine pages to de-stress<br></div>
+        <div class="welcome slide a"><span style="font-size: 30px;">welcome to the world's most relaxing site</span><hr>explore our positivity, music, and imagine pages to de-stress</div>
         <div class="slide b">
           <a href="https://asomebody.github.io/Laeta/wallofpositivity.html">
             <img class="slide" src="https://every-tuesday.com/wp-content/uploads/2015/01/life-is-tough-but-so-are-you-preview.jpg">
-            <div class="overlay">
+            <div class="overlay" style="text-align: center;">
+              <span class="welcome">click here to check out our "Wall of Positivity" page for exactly that (a wall of positivity)
+              </span>
             </div>
           </a>
         </div>
         <div class="slide c">
           <img class="slide" src="stoney.jpg">
           <div class="overlay">
-            <a href="https://www.youtube.com/watch?v=hCBX28p-4JY">
-              <h2 class="welcome">Song Name: Ain't Nobody Takin My Baby<br> Artist: Russ<br>Single
-            <br>
-                <a href="https://asomebody.github.io/Laeta/music_carousel.html">Click here to check out our "Music" page for more music suggestions!</a>
-              </h2>        
+            <a href="https://www.youtube.com/watch?v=PP48-FKUvDc">
+              <span class="welcome">
+                Song Name: Deja Vu ft. Justin Bieber<br>Artist: Post Malone<br>Album: Stoney
+              </span>
             </a>
+            <hr>
+              <a class="welcome" href="https://asomebody.github.io/Laeta/music_carousel.html">click here to check out our "Music" page for more music suggestions</a>
           </div>
         </div>
         <div class="slide d">
           <a href="https://asomebody.github.io/Laeta/imagine2.html">
             <img class="slide" src="https://68.media.tumblr.com/a51c8ceb3057a21070dc6b281f86c3cb/tumblr_o4ede5Fkqv1qbgezjo1_400.gif">
             <div class="overlay">
+              <a href="https://www.youtube.com/watch?v=hCBX28p-4JY">
+                <span class="welcome">click here to check out our "Imagine" page for more relaxing gifs
+                </span>
             </div>
           </a>
         </div>
         <div class="slide e">
           <a href="https://asomebody.github.io/Laeta/wallofpositivity.html">
-            <img class="slide" style="width: 200px;" src="https://images-na.ssl-images-amazon.com/images/I/61HabTQM%2BCL._SY500_.jpg">
+            <img class="slide" src="https://images-na.ssl-images-amazon.com/images/I/61HabTQM%2BCL._SY500_.jpg">
             <div class="overlay">
+              <a href="https://www.youtube.com/watch?v=hCBX28p-4JY">
+                <span class="welcome">click here to check out our "Wall of Positivity" page for exactly that (a wall of positivity)
+                </span>
             </div>
           </a>
         </div>
@@ -312,18 +325,18 @@
           <img class="slide" src="aintnobodytakinmybaby.jpg">
           <div class="overlay">
           <a href="https://www.youtube.com/watch?v=hCBX28p-4JY">
-            <h2 class="welcome">Song Name: Ain't Nobody Takin My Baby<br><br> Artist: Russ<br><br>Single
-          <br>
-              <a href="https://asomebody.github.io/Laeta/music_carousel.html">Click here to check out our "Music" page for more music suggestions!</a>
-            </h2>
+            <span class="welcome" style="text-align: cneter;">Song Name: Ain't Nobody Takin My Baby<br>Artist: Russ<br>Single
+          <hr>
+              <a class="welcome" href="https://asomebody.github.io/Laeta/music_carousel.html">Click here to check out our "Music" page for more music suggestions!</a>
+            </span>
           </div>
         </div>
       </div>
     </div>
-    
+
     <div class="next">Next</div>
     <div class="prev">Prev</div>
-    
+
   </body>
   <script>
         var carus = $(".carus"),
